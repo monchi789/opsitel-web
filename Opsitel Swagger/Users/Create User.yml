@@ -1,0 +1,26 @@
+info:
+  name: Create User
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{host}}/users/"
+  body:
+    type: json
+    data: |-
+      {
+        "name": "Valeria",
+        "last_name": "Quispe Condori",
+        "email": "valeria.quispe@gmail.com",
+        "role": "editor",
+        "is_active": true,
+        "password": "valeria789"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

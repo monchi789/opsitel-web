@@ -1,0 +1,26 @@
+info:
+  name: Update User
+  type: http
+  seq: 3
+
+http:
+  method: PATCH
+  url: "{{host}}/users/6f7b8fa7-cc39-4e12-b866-4037f69fcfcf/"
+  body:
+    type: json
+    data: |-
+      {
+        //"name": "Juan",
+        //"last_name": "Pepe",
+        //"email": "juan@example.com",
+        //"role": "revisor",
+        "is_active": false,
+        "password": "mario"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

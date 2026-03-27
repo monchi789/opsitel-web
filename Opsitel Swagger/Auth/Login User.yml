@@ -1,0 +1,30 @@
+info:
+  name: Login User
+  type: http
+  seq: 1
+
+http:
+  method: POST
+  url: "{{host}}/auth/login"
+  body:
+    type: json
+    data: |-
+      {
+        "username": "cristian-02-@live.com",
+        "password": "1234"
+      }
+  auth:
+    type: oauth2
+    flow: authorization_code
+    credentials:
+      placement: body
+    tokenConfig:
+      id: credentials
+      placement:
+        header: Bearer
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

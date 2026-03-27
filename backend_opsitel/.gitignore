@@ -1,0 +1,9 @@
+database_opsitel.db
+*.pyc
+*.pyo
+*.pyd
+.venv/
+.idea/
+
+# Ignore the .env file if it exists
+.env
