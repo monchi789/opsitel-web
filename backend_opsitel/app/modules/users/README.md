@@ -16,7 +16,7 @@ Administrar ciclo de vida de usuarios, roles y estado de activacion.
 - [ ] `GET /api/v1/users/me`.
 - [ ] Borrado logico.
 - [ ] Validacion de permisos por rol en endpoints.
-
+1
 ## Checklist de implementacion de metodos
 
 - [x] `create_user(db, user)`.
